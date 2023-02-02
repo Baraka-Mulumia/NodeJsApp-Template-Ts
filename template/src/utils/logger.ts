@@ -1,35 +1,35 @@
-import { DEFAULT_TIME_FORMAT_PATTERN } from "./../config/constants";
-import chalk from "chalk";
-import { format } from "date-fns";
-import util from "util";
+import { DEFAULT_TIME_FORMAT_PATTERN } from '../constants';
+import chalk from 'chalk';
+import { format } from 'date-fns';
+import util from 'util';
 
 export default class AppLogger {
   public static info = (args: any) =>
     console.log(
       chalk.blue(`[${format(new Date(), DEFAULT_TIME_FORMAT_PATTERN)}]`),
-      chalk.bgBlueBright.black(" INFO "),
-      typeof args === "string" ? chalk.blueBright(args) : args
+      chalk.bgBlueBright.black(' INFO '),
+      typeof args === 'string' ? chalk.blueBright(args) : args
     );
 
   public static error = (args: any) =>
     console.log(
       chalk.blue(`[${format(new Date(), DEFAULT_TIME_FORMAT_PATTERN)}]`),
-      chalk.bgRedBright.black(" ERROR "),
-      typeof args === "string" ? chalk.redBright(args) : args
+      chalk.bgRedBright.black(' ERROR '),
+      typeof args === 'string' ? chalk.redBright(args) : args
     );
 
   public static warn = (args: any) =>
     console.log(
       chalk.blue(`[${format(new Date(), DEFAULT_TIME_FORMAT_PATTERN)}]`),
-      chalk.bgYellowBright.black(" WARN "),
-      typeof args === "string" ? chalk.yellowBright(args) : args
+      chalk.bgYellowBright.black(' WARN '),
+      typeof args === 'string' ? chalk.yellowBright(args) : args
     );
 
   public static success = (args: any) =>
     console.log(
       chalk.blue(`[${format(new Date(), DEFAULT_TIME_FORMAT_PATTERN)}]`),
-      chalk.bgGreenBright.black(" SUCCESS "),
-      typeof args === "string" ? chalk.greenBright(args) : args
+      chalk.bgGreenBright.black(' SUCCESS '),
+      typeof args === 'string' ? chalk.greenBright(args) : args
     );
 }
 

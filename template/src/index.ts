@@ -1,7 +1,11 @@
+import Express from 'express';
 import { InfoLogger } from './utils/logger';
 import cors from 'cors';
+import defaultConfig from './config';
+import dotenv from 'dotenv';
 import morgan from 'morgan';
-import Express from 'express';
+
+dotenv.config();
 
 const app = Express();
 app.use(cors());
@@ -12,6 +16,6 @@ app.get('/', (req, res) => {
   res.send('Hello World');
 });
 
-app.listen(8080, () => {
-  InfoLogger('Creativity starts with viewing the whole world differently');
+app.listen(defaultConfig.port, () => {
+  InfoLogger(`Server is running on port ${defaultConfig.port}`);
 });
