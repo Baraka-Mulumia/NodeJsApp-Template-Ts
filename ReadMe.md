@@ -10,8 +10,8 @@ it your own along the way. Happy coding.
 
 - Summary of set ups
 
-1. `git clone https://github.com/iambaraka/tsc-node-es-modules-starter.git`
-2. Run yarn install
+1. Click on use this template to Create a [new repository](https://github.com/iambaraka/tsc-node-es-modules-starter/generate)  based on this repo
+2. CLone too your local pc and Run ```yarn install```
 3. create a .env file and update environment variables as per the.env.example
    file
 4. `yarn dev` to spin up the development server
