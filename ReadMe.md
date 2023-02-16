@@ -10,7 +10,7 @@ it your own along the way. Happy coding.
 
 - Summary of set ups
 
-1. Click on use this template to Create a [new repository](https://github.com/iambaraka/tsc-node-es-modules-starter/generate)  based on this repo
+1. Click on use this template to Create a [new repository](https://github.com/iambaraka/NodeJsApp-Template-Ts/generate)  based on this repo
 2. CLone too your local pc and Run ```yarn install```
 3. create a .env file and update environment variables as per the.env.example
    file
