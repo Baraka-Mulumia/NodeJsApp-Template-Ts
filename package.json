@@ -46,6 +46,7 @@
     "@types/morgan": "^1.9.3",
     "@types/node": "^18.7.23",
     "@types/uuid": "^8.3.4",
+    "babel-plugin-module-resolver": "^5.0.0",
     "copyfiles": "^2.4.1",
     "nodemon": "^2.0.20",
     "prettier": "^2.7.1",
